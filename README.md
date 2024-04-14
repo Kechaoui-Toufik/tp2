@@ -14,9 +14,15 @@
 ### joueur insolvable :
   Jeu doit lever une JeuFermeException dans le cas ou joueuer n'a pas la somme à débiter de son comptre.
 ### Joueur perdu:
-  Jeu doit débiter le compte de joueur et je jeu ferme.
-### Joueur gagne et la banque n'est plus solvable (Jeu fermé) :
- Jeu doit créditer le compte de joueur avec  2 x mise  en cas d'un bon pari et la banque ne peut plus accepter d'autres paris.
-### Joueur gagne et la banque est toujours solvable: 
- Jeu doit créditer le compte de joueur avec  2 x mise  en cas d'un bon pari et la banque peut accepter d'autres paris.
+  Jeu doit débiter le compte de joueur et le jeu s'arrête.
+### Joueur gagne :
+ Jeu doit créditer le compte de joueur avec  2 x mise .
+### Jeu fermé
+ Jeu se ferme si la banque est insolvale (ne peut pas accepter d'autres paris) .
+
+## 4 . 
+  Dans le cas ou Jeu est fermé, il s'agit d'un test d'état, car ce test consiste à vérifer la valeur de la variable state dans la classe jeu.
+## 5. 
+ dans le cas ou le joueur est insolvable, il s'agit d'un test d'interaction, car on vérifie si Jeu a intéragit avec la méthode lander de Dé.
+
   
