@@ -19,7 +19,9 @@ public class UserServiceTest {
         doNothing().when(utilisateurApiMock).creerUtilisateur(utilisateur);
 
         // TODO : Création du service avec le mock
+
         UserService userService = new UserService(utilisateurApiMock);
+
 // ...
         // TODO : Appel de la méthode à tester
         userService.creerUtilisateur(utilisateur);

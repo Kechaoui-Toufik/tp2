@@ -28,7 +28,7 @@ public class CalculatriceTest {
 // TODO : Vérification de l'état de l'objet après l'appel de la
 //méthode "additionner", penser à utiliser la méthode
 //« getState() » de la directive « verify » : // exemple :
-
-        //Assertions.assertEquals(result,verify(calculatrice).getState());
+    when(calculatrice.getState()).thenReturn(result);
+    Assertions.assertEquals(result, calculatrice.getState());
     }
 }

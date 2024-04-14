@@ -11,7 +11,9 @@ public class Calculatrice  {
     public int getState(){
          return result;
     }
-
+    public void setResult(int result){
+        this.result = result;
+    }
     private int result ;
 
 
